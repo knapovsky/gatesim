@@ -1,0 +1,50 @@
+<?XML version="1.0" ?>
+<BLOCK name="binary_decoder">
+
+	<GENERATOR id="1" type="IMPULSE" lambda="4" time="5">
+		<OUTPUT id="1" port="1"></OUTPUT>
+		<OUTPUT id="4" port="2"></OUTPUT>
+		<OUTPUT id="6" port="1"></OUTPUT>
+	</GENERATOR>
+	<GENERATOR id="2" type="IMPULSE" lambda="1" time="1">
+		<OUTPUT id="2" port="1"></OUTPUT>
+		<OUTPUT id="5" port="2"></OUTPUT>
+		<OUTPUT id="6" port="2"></OUTPUT>
+	</GENERATOR>
+	
+	
+	<GATE id="1" type="NOT" inputs="1" delay="2">
+		<OUTPUT id="3" port="1"></OUTPUT>
+		<OUTPUT id="5" port="1"></OUTPUT>
+	</GATE>
+	<GATE id="2" type="NOT" inputs="1" delay="2">
+		<OUTPUT id="3" port="2"></OUTPUT>
+		<OUTPUT id="4" port="1"></OUTPUT>
+	</GATE>
+	
+	
+	<GATE id="3" type="AND" inputs="2" delay="3">
+		<OUTPUT id="7" port="1"></OUTPUT>
+	</GATE>
+	<GATE id="4" type="AND" inputs="2" delay="3">
+		<OUTPUT id="8" port="1"></OUTPUT>
+	</GATE>
+	<GATE id="5" type="AND" inputs="2" delay="3">
+		<OUTPUT id="9" port="1"></OUTPUT>
+	</GATE>
+	<GATE id="6" type="AND" inputs="2" delay="3">
+		<OUTPUT id="10" port="1"></OUTPUT>
+	</GATE>
+	
+		
+	<GATE id="7" type="NOT" inputs="1" delay="2">
+	</GATE>
+	<GATE id="8" type="NOT" inputs="1" delay="2">
+	</GATE>
+	<GATE id="9" type="NOT" inputs="1" delay="2">
+	</GATE>
+	<GATE id="10" type="NOT" inputs="1" delay="2">
+	</GATE>
+	
+	
+</BLOCK>

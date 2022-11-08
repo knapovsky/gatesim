@@ -1,0 +1,38 @@
+<?XML version="1.0" ?>
+<BLOCK name="sync_jk">
+
+	<GENERATOR id="1" type="PERIODICAL" lambda="4" time="2">
+		<OUTPUT id="1" port="2"></OUTPUT>
+	</GENERATOR>
+	<GENERATOR id="2" type="IMPULSE" lambda="4" time="2">
+		<OUTPUT id="1" port="1"></OUTPUT>
+	</GENERATOR>
+	<GENERATOR id="3" type="PERIODICAL" lambda="1" time="0">
+		<OUTPUT id="3" port="2"></OUTPUT>
+		<OUTPUT id="4" port="1"></OUTPUT>
+	</GENERATOR>
+	
+	
+	<GATE id="1" type="AND" inputs="2" delay="1">
+		<OUTPUT id="3" port="1"></OUTPUT>
+	</GATE>
+	<GATE id="2" type="AND" inputs="2" delay="1">
+		<OUTPUT id="4" port="2"></OUTPUT>
+	</GATE>
+	<GATE id="3" type="NAND" inputs="2" delay="1">
+		<OUTPUT id="5" port="1"></OUTPUT>
+	</GATE>
+	<GATE id="4" type="NAND" inputs="2" delay="1">
+		<OUTPUT id="6" port="2"></OUTPUT>
+	</GATE>
+	<GATE id="5" type="NAND" inputs="2" delay="1">
+		<OUTPUT id="6" port="1"></OUTPUT>
+		<OUTPUT id="2" port="2"></OUTPUT>
+	</GATE>
+	<GATE id="6" type="NAND" inputs="2" delay="1">
+		<OUTPUT id="5" port="2"></OUTPUT>
+		<OUTPUT id="1" port="1"></OUTPUT>
+	</GATE>
+	
+	
+</BLOCK>
