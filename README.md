@@ -462,12 +462,12 @@ Každému typu generátoru lze nastavit několik povinných parametrů. Díky t�
 
 Impulsní generátor
 
-![impulse](http://images.knapovsky.com/impulse.png)
+![impulse](http://images.knapovsky.com/impulse-1.png)
 
 ![impulse2](http://images.knapovsky.com/impulse-2.png)
 
 #### Periodický generátor
 
-![periodic](http://images.knapovsky.com/periodicity.png)
+![periodic](http://images.knapovsky.com/periodicity-1.png)
 
 ![periodic2](http://images.knapovsky.com/periodicity-2.png)
